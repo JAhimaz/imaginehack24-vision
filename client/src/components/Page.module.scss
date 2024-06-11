@@ -1,0 +1,23 @@
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+  min-height: 100vh;
+  position: relative;
+}
+
+.pageHeader {
+  display: flex;
+  flex-direction: column;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pageUpdated {
+  font-size: 1em;
+  color: var(--subtext);
+}

@@ -1,0 +1,69 @@
+// Sidebar main class, this handles the sidebar itself
+.sidebar {
+  width: 400px;
+  height: 100vh;
+  background-color: var(--foreground);
+  // Positioning
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.sidebarInner {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  // Styling
+  background-color: var(--background);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  gap: 1rem;
+  height: 100%;
+  width: 100%;
+}
+
+// Each item on the sidebar
+.sidebarItem, .sidebarItemSelected {
+  font-size: 1rem;
+  padding: 0.5rem 0.5rem;
+  transition: background-color 0.15s ease-in-out;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  border-radius: 0.2rem;
+  color: var(--text-dim);
+}
+
+.sidebarItemSelected {
+  background-color: var(--highlight);
+  color: var(--highlight-text);
+}
+
+.sidebarItem:hover {
+  background-color: var(--foreground);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2.25rem;
+  font-weight: bold;
+  color: var(--highlight-text);
+}
+
+.footer {
+  font-size: 0.8rem;
+  color: var(--subtext);
+  margin-top: auto;
+}

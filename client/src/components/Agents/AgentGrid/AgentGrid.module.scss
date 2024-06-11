@@ -1,0 +1,51 @@
+.agentGrid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 100%;
+  padding-right: 1rem;
+}
+
+.agentContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  padding: 1rem;
+  box-shadow: 0 0 30px #0000001a;
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  width: 100%;
+  flex: 1;
+  height: 100%;
+}
+
+.textInputContainer {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  font-size: 1rem;
+  gap: 1rem;
+  align-items: center;
+  color: var(--foreground-dim);
+}
+
+.textInput {
+  box-sizing: border-box;
+  padding: 0.5rem 0;
+  border: none;
+  width: 100%;
+  font-size: 1rem;
+  font-family: inherit;
+  border-bottom: 1px solid var(--foreground-dim) !important;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--dim);
+}
+
+.textInput:focus-visible {
+  outline: none;
+  box-shadow: none;
+}

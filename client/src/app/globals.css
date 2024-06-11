@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 :root {
-  font-family: 'Inter', sans-serif;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +11,11 @@
 
   --background: #F9F9F9;
   --foreground: #f2f2f2;
-  --highlight: #151515;
+  --foreground-dim: #e4e4e4;
+  --button: #1b5dfa;
+  --highlight: #f5f8ff;
+  --subtext: #c5c5c5;
+  --highlight-text: #5483fa;
   --text: #151515;
   --text-neg: #F9F9F9;
   --text-sub: #353535;
@@ -35,12 +40,19 @@
 
 html {
   scroll-behavior: smooth;
+  letter-spacing: -0.25px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
   height: 100%;
   width: 100%;
   max-width: 100%;
+  min-height: 100vh;
   margin: 0;
   background-color: var(--background);
 }

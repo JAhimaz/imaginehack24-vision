@@ -1,9 +1,11 @@
+import Sidebar from '@/components/Sidebar/Sidebar'
 import styles from './page.module.css'
+import Dashboard from '@/components/Dashboard/Dashboard'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-
-    </main>
+    <section>
+      Error 404
+    </section>
   )
 }

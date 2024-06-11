@@ -14,7 +14,8 @@ import session from "express-session";
 import MongoStore from 'connect-mongo'
 
 // Routes
-// import Route from "@routes/Route"; // Example Route
+import GetEmployeesRoute from "./routes/GetEmployees";
+import GenerateEmployeeAIRoute from "./routes/GenerateEmployeeAI";
 
 const app = express();
 
@@ -41,8 +42,6 @@ app.use(
       maxAge: 1000 * 60 * 60 * 24 * 5,
       httpOnly: false,
       secure: false,
-      // sameSite: 'strict',
-      // domain: '.reachcard.app'
     },
     name: "session-name", // You may rename this to any session name you would like
   }),
@@ -81,4 +80,5 @@ app.use('/api/', rateLimit({
 // Declaration of Routes
 
 // Example Route Declaration
-// app.use("/path/to/route", Route);
+app.use('/api/employees', GetEmployeesRoute);
+app.use('/api/ai/employee', GenerateEmployeeAIRoute);
